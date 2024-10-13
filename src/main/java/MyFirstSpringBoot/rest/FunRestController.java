@@ -13,7 +13,7 @@ public class FunRestController {
     }
     @GetMapping("/workout")
     public String doWorkout() {
-        return "Run Saalim Run";
+        return "Run Saalim Run This is a new day and start fresh";
     }
 
     @GetMapping("/fortune")
