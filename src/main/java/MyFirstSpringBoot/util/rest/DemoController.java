@@ -1,5 +1,7 @@
-package MyFirstSpringBoot;
+package MyFirstSpringBoot.util.rest;
 
+
+import MyFirstSpringBoot.util.common.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,11 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
 
     //Define constructor for dependency injection
-    private  Coach myCoach;
+    private Coach myCoach;
 
     @Autowired
-    public DemoController(Coach theCoach){
-        myCoach = theCoach;
+    public void setCoach(Coach theCoach){
+        myCoach =theCoach;
     }
 
     @GetMapping("/dailyworkout")

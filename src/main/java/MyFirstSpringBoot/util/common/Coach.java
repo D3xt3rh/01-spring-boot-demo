@@ -1,4 +1,4 @@
-package MyFirstSpringBoot;
+package MyFirstSpringBoot.util.common;
 
 public interface Coach {
 
